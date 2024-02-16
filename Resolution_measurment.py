@@ -8,7 +8,7 @@ def sigmoid(x):
     z = 1/(1+np.exp(-x))
     return z
 
-def res_calc(img):
+def res_calc(img, axis ):
 
     w_size = 30
     window = np.ones((w_size, 1))
@@ -30,12 +30,16 @@ def res_calc(img):
     res_total = np.array([])
 
 
-    frame_size_x = img.shape[0]
-    pix_res = FOV / frame_size_x
+    frame_size = img.shape[axis]
+    pix_res = FOV / frame_size
     height = width
 
-    for line in range(img.shape[0]):
-        b_line = np.reshape(b[line, :] / 255, (b.shape[0], 1))
+    for line in range(img.shape[axis]):
+        if axis == 0:
+            b_line = np.reshape(b[line, :] / 255, (b.shape[1], 1))
+        else:
+            b_line = np.reshape(b[:,line] / 255, (b.shape[0], 1))
+
         b_corr = np.round(sig.correlate(b_line, window))
         b_res = sig.find_peaks(np.reshape(b_corr, (len(b_corr))), height=height)
         b_res = np.array(b_res[1]['peak_heights'])
@@ -47,7 +51,7 @@ def res_calc(img):
     return resolution_estimation, b
 
 normal_k=1.5
-FOV = 250
+FOV = 4000
 gauss_size = 3
 BuiltGauss = True
 width = 0
@@ -55,7 +59,7 @@ width = 0
 
 
 path = './res'
-file = 'res2.png'
+file = 'Billes_Tin_013.jpg'
 fullpath = os.path.join(path,file)
 img = cv2.imread(fullpath,0)
 
@@ -140,8 +144,8 @@ title = 'kernel_sobel_y'
 img_k2 = sig.convolve2d(img_gauss,ker,mode='same')
 img_k2 = (img_k2 - np.min(img_k2))/( np.max(img_k2) - np.min(img_k2))
 
-res_y_est,edges_y = res_calc(img_k2)
-res_x_est,edges_x = res_calc(img_k1)
+res_y_est,edges_y = res_calc(img_k2,1)
+res_x_est,edges_x = res_calc(img_k1,0)
 print('res x = ' + str(res_x_est) + '[nm], res_y = ' + str(res_y_est) + '[nm]. Ratio Y/X =' + str(np.round((res_y_est/res_x_est),2)) )
 
 

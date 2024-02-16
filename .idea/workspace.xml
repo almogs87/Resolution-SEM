@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="652a9881-1066-43e5-8e57-560c2f7a5d0d" name="Changes" comment="1.Focus ranker (by contrast diff)&#10;2.Canny &amp; sobel for resolution measurement.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="652a9881-1066-43e5-8e57-560c2f7a5d0d" name="Changes" comment="Resolution X/Y calc + result image&#10;fixed asymmetric frame size">
       <change beforePath="$PROJECT_DIR$/Resolution_measurment.py" beforeDir="false" afterPath="$PROJECT_DIR$/Resolution_measurment.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,12 +95,29 @@
       <option name="project" value="LOCAL" />
       <updated>1708000893206</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1.Focus ranker (by contrast diff)&#10;2.Canny &amp; sobel for resolution measurement.">
+      <option name="closed" value="true" />
+      <created>1708072365295</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708072365295</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Resolution X/Y calc + result image">
+      <option name="closed" value="true" />
+      <created>1708123073578</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708123073578</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.Focus ranker (by contrast diff)&#10;2.Canny &amp; sobel for resolution measurement." />
-    <option name="LAST_COMMIT_MESSAGE" value="1.Focus ranker (by contrast diff)&#10;2.Canny &amp; sobel for resolution measurement." />
+    <MESSAGE value="Resolution X/Y calc + result image" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resolution X/Y calc + result image" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -110,6 +126,11 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>65</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Resolution_measurment.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
