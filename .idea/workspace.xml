@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="652a9881-1066-43e5-8e57-560c2f7a5d0d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SEM_res.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resolution_measurment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/focus_estimation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="652a9881-1066-43e5-8e57-560c2f7a5d0d" name="Changes" comment="1.Focus ranker (by contrast diff)&#10;2.Canny &amp; sobel for resolution measurement.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resolution_measurment.py" beforeDir="false" afterPath="$PROJECT_DIR$/Resolution_measurment.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +88,20 @@
       <option name="presentableId" value="Default" />
       <updated>1705757685698</updated>
     </task>
+    <task id="LOCAL-00001" summary="1.Focus ranker (by contrast diff)&#10;2.Canny &amp; sobel for resolution measurement.">
+      <option name="closed" value="true" />
+      <created>1708000893206</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708000893206</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1.Focus ranker (by contrast diff)&#10;2.Canny &amp; sobel for resolution measurement." />
+    <option name="LAST_COMMIT_MESSAGE" value="1.Focus ranker (by contrast diff)&#10;2.Canny &amp; sobel for resolution measurement." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
