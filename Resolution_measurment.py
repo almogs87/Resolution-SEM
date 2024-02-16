@@ -51,7 +51,7 @@ def res_calc(img, axis ):
     return resolution_estimation, b
 
 normal_k=1.5
-FOV = 4000
+FOV = 250
 gauss_size = 3
 BuiltGauss = True
 width = 0
@@ -59,7 +59,7 @@ width = 0
 
 
 path = './res'
-file = 'Billes_Tin_013.jpg'
+file = 'res2.png'
 fullpath = os.path.join(path,file)
 img = cv2.imread(fullpath,0)
 
